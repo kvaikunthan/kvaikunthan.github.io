@@ -1,2 +1,2 @@
 # CS portfolio
-Access my portfolio at [kvaikunthan.github.io](kvaikunthan.github.io).
+Access my portfolio at [kvaikunthan.github.io](https://kvaikunthan.github.io/).
