@@ -3212,6 +3212,27 @@ input, select, textarea {
 
 		}
 
+		@media screen and (min-width:800px) {
+			.replace2 a {
+				display: none;
+			}
+
+			.replace1 a {
+				display:flex;
+			}
+		}
+		
+		@media screen and (max-width: 800px) {
+			.replace1 a {
+				display: none;
+			}
+
+			.replace2 a {
+				display:flex;
+			}
+		}
+
+
 		@media screen and (max-width: 480px) {
 
 			#header nav a[href="#menu"] {
