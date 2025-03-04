@@ -25,15 +25,41 @@
                   Kabilan Vaikunthan
                 </p>
                 <p>
-                  I'm a first-year at UC Berkeley studying Applied Mathematics and Statistics, interested in mathematical finance, computer vision, and poker theory.
+                  I'm a first-year at UC Berkeley studying Applied Mathematics and Statistics, interested in mathematical finance, computer vision, and robotics.
                 </p>
                 <p>
                   At Berkeley, I am the perception software lead of the <a href="https://urobotics.studentorg.berkeley.edu/">Underwater Robotics</a> club. Currently, I'm working on an optical music recognition application to read handwritten sheet music.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:kabilanvaikunthan@berkeley.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Kabilan_Vaikunthan_Resume.pdf">Resume</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/kvaikunthan/">Github</a>
+                  <a href="#" class="copy-container" onclick="copyEmail(event)">
+                    Copy email
+                    <span class="tooltip" id="tooltip">Click to copy</span>
+                  </a> &nbsp;/&nbsp;
+                  <script>
+                    function copyEmail(event) {
+                        event.preventDefault(); // Prevent the default anchor behavior
+            
+                        const email = "kabilanvaikunthan@berkeley.edu";
+                        const tooltip = document.getElementById("tooltip");
+            
+                        navigator.clipboard.writeText(email)
+                            .then(() => {
+                                tooltip.textContent = "Copied!";
+                            })
+                            .catch(err => {
+                                console.error("Failed to copy:", err);
+                                tooltip.textContent = "Failed to copy :(";
+                            });
+            
+                        // Reset tooltip text after 1.5 seconds
+                        setTimeout(() => {
+                            tooltip.textContent = "Click to copy";
+                        }, 2000);
+                    }
+                  </script>
+                  <a href="data/Kabilan_Vaikunthan_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/kvaikunthan/" target="_blank" rel="noopener noreferrer">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/kvaikunthan/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
